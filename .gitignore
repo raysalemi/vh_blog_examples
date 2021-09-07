@@ -1,0 +1,12 @@
+.idea
+__pycache__
+.ipynb_checkpoints
+scratch.ipynb
+*.json
+modelsim.ini
+transcript
+*.vstf
+results.xml
+sim_build
+work
+qrun.*
