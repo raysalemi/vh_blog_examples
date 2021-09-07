@@ -4,7 +4,7 @@ SIM ?= icarus
 # VHDL_SOURCES =$(CWD)/../tinyalu_hdl/vhdl/single_cycle_add_and_xor.vhd \
               $(CWD)/../tinyalu_hdl/vhdl/three_cycle_mult.vhd \
               $(CWD)/../tinyalu_hdl/vhdl/tinyalu.vhd
-VERILOG_SOURCES =$(CWD)/../tinyalu_hdl/verilog/tinyalu.sv
+VERILOG_SOURCES =$(CWD)/tinyalu_hdl/verilog/tinyalu.sv
 MODULE := testbench
 TOPLEVEL := tinyalu
 TOPLEVEL_LANG := verilog
