@@ -1,8 +1,0 @@
-QuestaSim-64 qrun 2021.1_1 Utility 2021.02 Feb 21 2021
-Start time: 11:03:11 on Aug 16,2021
-qrun sensor.py 
-** Error: (qrun-13321) Name "sensor.py" is not an argument or file that qrun tool recognizes.
-End time: 11:03:11 on Aug 16,2021, Elapsed time: 0:00:00
-*** Summary *********************************************
-    qrun: Errors:   1, Warnings:   0
-  Totals: Errors:   1, Warnings:   0
