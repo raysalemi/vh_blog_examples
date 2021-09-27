@@ -15,3 +15,5 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
 cleanall: clean
 	@rm -rf __pycache__
 	@rm -f results.xml
+	@rm -f modelsim.ini
+	@rm -f transcript
