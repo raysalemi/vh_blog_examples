@@ -1,0 +1,1 @@
+This example introduces **pyuvm** 2.0, which builds upon **cocotb** rather than using threads for multitasking.  The TinyALU example comes from *The UVM Primer*.  In this case we verify it using **pyuvm**.
