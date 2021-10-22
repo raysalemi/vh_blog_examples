@@ -38,7 +38,8 @@ class AluSeq(uvm_sequence):
 
 class Driver(uvm_driver):
     def connect_phase(self):
-        self.bfm = self.cdb_get("BFM")
+        self.bfm = ConfigDB().get(self, "", "BFM")
+        print("FULL NAME", self.get_full_name())
 
     async def run_phase(self):
         while True:
