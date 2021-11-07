@@ -23,6 +23,7 @@ class TinyTest(uvm_test):
 
 @cocotb.test()
 async def tiny_test(_):
+    "Print the tiny message"
     await uvm_root().run_test("TinyTest")
 
 
@@ -33,6 +34,7 @@ class TinyFactoryTest(uvm_test):
 
 @cocotb.test()
 async def tiny_factory_test(_):
+    "Print the tiny message"
     await uvm_root().run_test("TinyFactoryTest")
 
 
@@ -80,8 +82,8 @@ class TwoCompEnv(uvm_env):
 
 class TwoCompTest(uvm_test):
     def build_phase(self):
-        uvm_factory().set_inst_override_by_type(
-            TinyComponent, MediumComponent, "uvm_test_top.env.tc1")
+        uvm_factory().set_inst_override_by_name(
+            "TinyComponent", "MediumComponent", "uvm_test_top.env.tc1")
         self.env = TwoCompEnv("env", self)
 
 
@@ -179,7 +181,7 @@ class Scoreboard(uvm_component):
             else:
                 passed = False
                 logger.error(
-                    f"FAILED: {aa} {Ops(op).name} {bb} = {actual} - predicted {prediction}")
+                    f"FAILED: {aa} {Ops(op).name} {bb} = {actual} - predicted {prediction}")  # noqa: E501
 
         if len(set(Ops) - self.cvg) > 0:
             logger.error(

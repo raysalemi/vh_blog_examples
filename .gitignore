@@ -10,3 +10,4 @@ results.xml
 sim_build
 work
 qrun.*
+*.egg-info
