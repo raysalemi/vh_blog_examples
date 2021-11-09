@@ -11,3 +11,4 @@ sim_build
 work
 qrun.*
 *.egg-info
+.tox
